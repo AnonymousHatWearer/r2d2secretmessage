@@ -4,6 +4,6 @@ game.Players.PlayerAdded:Connect(function(player)
         local humanoid = character:WaitForChild("Humanoid")
         
         -- Set the walk speed to an abnormally high value (e.g., 200)
-        humanoid.WalkSpeed = 200  -- Default walk speed is 16, 30 is much faster
+        humanoid.WalkSpeed = 40  -- Default walk speed is 16, 30 is much faster
     end)
 end)
