@@ -1,9 +1,4 @@
-game.Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(character)
-        -- Wait for the humanoid (the part of the character that controls movement)
-        local humanoid = character:WaitForChild("Humanoid")
-        
-        -- Set the walk speed to an abnormally high value (e.g., 200)
-        humanoid.WalkSpeed = 40  -- Default walk speed is 16, 30 is much faster
-    end)
-end)
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+humanoid.WalkSpeed = 40  -- Set walk speed to 40
