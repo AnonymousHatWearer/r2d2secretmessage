@@ -1,3 +1,5 @@
+-- Script made by the anonymous hat wearer, this will be updated soon
+
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character:WaitForChild("Humanoid")
