@@ -20,7 +20,7 @@ textboxgui.Parent = framegui
 textbuttongui.Parent = framegui
 speedgui.Parent = player.PlayerGui
 
-framegui.Position = UDim2.new(0.888, 0, 0, 0)
+framegui.Position = UDim2.new(0.6, 0, 0, 0)
 framegui.Size = UDim2.new(0.4,0,0.07,0)
 
 textboxgui.Position = UDim2.new(0.036, 0 , 0, 0 )
