@@ -88,19 +88,53 @@ rrBtn.TextColor = BrickColor.new("White")
 -- Event Listeners
 
 twBtn.MouseButton1Click:Connect(function()
-	humanoidrootpart.CFrame = tumbleweed
+	local count = 0.01
+	local dividedCFrame = humanoidrootpart.CFrame:Lerp(tumbleweed, count) 
+
+	
+	while count < 0.6 do
+		humanoidrootpart.CFrame = dividedCFrame
+		dividedCFrame = humanoidrootpart.CFrame:Lerp(tumbleweed, count)
+		count = count + 0.01
+		print(count)
+		wait(0.01)
+	end
 end)
 
 grBtn.MouseButton1Click:Connect(function()
-	humanoidrootpart.CFrame = grayridge
+	local count = 0.01
+	local dividedCFrame = humanoidrootpart.CFrame:Lerp(grayridge, count) 
+	while count < 0.6 do
+		humanoidrootpart.CFrame = dividedCFrame
+		dividedCFrame = humanoidrootpart.CFrame:Lerp(grayridge, count)
+		count = count + 0.01
+		print(count)
+		wait(0.01)
+	end
 end)
 
 csBtn.MouseButton1Click:Connect(function()
-	humanoidrootpart.CFrame = cassidy
+	local count = 0.01
+	local dividedCFrame = humanoidrootpart.CFrame:Lerp(cassidy, count) 
+	while count < 0.6 do
+		humanoidrootpart.CFrame = dividedCFrame
+		dividedCFrame = humanoidrootpart.CFrame:Lerp(cassidy, count)
+		count = count + 0.01
+		print(count)
+		wait(0.01)
+	end
 end)
 
 stBtn.MouseButton1Click:Connect(function()
-	humanoidrootpart.CFrame = stone
+	local count = 0.01
+	local dividedCFrame = humanoidrootpart.CFrame:Lerp(stone, count) 
+	while count < 0.6 do
+		humanoidrootpart.CFrame = dividedCFrame
+		dividedCFrame = humanoidrootpart.CFrame:Lerp(stone, count)
+		count = count + 0.01
+		print(count)
+		wait(0.01)
+	end
 end)
 
 atBtn.MouseButton1Click:Connect(function()
