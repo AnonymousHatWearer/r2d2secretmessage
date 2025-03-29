@@ -8,7 +8,7 @@ local humanoid = character:WaitForChild("Humanoid")
 local function spinCharacter()
     while true do
         -- Rotate the character continuously around the Y-axis (spinning)
-        character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.Angles(0, math.rad(5), 0))
+        character:SetPrimaryPartCFrame(character.PrimaryPart.CFrame * CFrame.Angles(0, math.rad(1000), 0))
         wait(0.02) -- Small wait to prevent freezing (adjust for faster/slower spinning)
     end
 end
