@@ -1,5 +1,5 @@
 wait(2)
-
+--
 local players = game.Players:GetChildren()
 local place = 1
 
